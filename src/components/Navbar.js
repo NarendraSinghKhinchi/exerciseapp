@@ -2,7 +2,7 @@ import React from 'react' ;
 import { Link } from 'react-router-dom' ;
 import {Stack} from '@mui/material';
 import logo from '../assets/images/Logo.png';
-import EntryPoint from './EntryPoint';
+// import EntryPoint from './EntryPoint';
 
 function Navbar() {
   return (
@@ -14,7 +14,7 @@ function Navbar() {
     >
     {/* px means padding x axis for "above stack" */}
         <Link to="/">
-            <img src={logo} alt='logo' style={{width:'48px' , height:"48px" , margin:"0 20px"}}></img>
+            <img src={logo} className='logo' alt='logo' style={{width:'48px' , height:"48px" , margin:"0 20px"}}></img>
         </Link>
         <Stack 
             direction="row"
@@ -24,7 +24,7 @@ function Navbar() {
         >
             <Link to="/" style={{textDecoration:"none", color:"#3A1212" , borderBottom:"3px solid #FF2625"}}>Home</Link>
             <a href="#exercises" style={{textDecoration:'none' , color:"#3A1212"}}>Exercises</a>
-            <EntryPoint></EntryPoint>
+            {/* <EntryPoint></EntryPoint> */}
         </Stack>
     </Stack>
   )

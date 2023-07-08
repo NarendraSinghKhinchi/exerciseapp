@@ -132,3 +132,10 @@ body {
     width: 280px;
   }
 }
+@media screen and (max-width:400px) {
+  .logo {
+    width: 28px !important;
+    height: 28px !important;
+    margin:0 !important ;
+  }
+}
